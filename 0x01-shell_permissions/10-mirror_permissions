@@ -1,6 +1,2 @@
 #!/bin/bash
-#stat -c '%a' hello
-perm=$(stat -c '%a' olleh)
-#echo $perm
-chmod $perm hello
-#stat -c '%a' hello
+chmod `stat -c '%a' olleh` hello
