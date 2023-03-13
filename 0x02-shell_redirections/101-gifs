@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -iname "*gif"| rev | cut -d '/' -f 1 | rev | LC_ALL=C sort --ignore-case
+find . -iname "*gif" -exec basename {} .gif ';'| rev | cut -d '/' -f 1 | rev | LC_ALL=C sort --ignore-case
