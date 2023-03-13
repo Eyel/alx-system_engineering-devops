@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name ".*" -size 0 -or -empty -type d | tr -d "./"
+find .  -size 0 -or -empty -type d | rev | cut -d '/' -f 1 | rev
